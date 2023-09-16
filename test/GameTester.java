@@ -1,10 +1,12 @@
 package test;
 
+//import our own classes
 import model.TicTacToeGame;
 
-public class GameTester {
-    
-    public static void main(String[] args) {
+public class GameTester 
+{
+    public static void main(String[] args) 
+    {
         TicTacToeGame game = new TicTacToeGame();
         System.out.println(game);
 

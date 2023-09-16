@@ -1,5 +1,6 @@
 package model;
 
-public enum GameState {
-    INIT, PLAYING, OVER
+public enum GameState 
+{
+    INITAL, PLAYING, OVER
 }

@@ -1,24 +1,25 @@
 package view;
 
+//import the following java classes
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-
 import javax.swing.JPanel;
 
-import controller.App;
+//import our own classes
+import controller.Application;
 import model.GameState;
 import model.Marking;
 import model.TicTacToeGame;
 
-public class AppCanvas extends JPanel {
+public class ApplicationCanvas extends JPanel {
     
     public static final int WIDTH = 400;
     public static final int HEIGHT = 100;
 
-    public AppCanvas() {
+    public ApplicationCanvas() {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
     }
 
@@ -29,11 +30,11 @@ public class AppCanvas extends JPanel {
         Graphics2D g2 = (Graphics2D) g;
         g2.setFont(new Font("Courier New", Font.BOLD, 16));
 
-        TicTacToeGame game = App.game;
+        TicTacToeGame game = Application.ticTacToeGame;
         GameState gameState = game.getState();
 
         switch (gameState) {
-            case INIT:
+            case INITAL:
                 g2.setColor(Color.BLUE);
                 g2.drawString("Press <New Game> to Start", 50, 50);
                 break;

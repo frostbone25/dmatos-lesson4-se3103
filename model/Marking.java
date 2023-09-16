@@ -1,5 +1,6 @@
 package model;
 
-public enum Marking {
+public enum Marking 
+{
     O, X, U
 }

@@ -1,5 +1,6 @@
 package model;
 
-public enum PlayStrategy {
-    VsHuman, VsComputer
+public enum PlayStrategy 
+{
+    VersusHuman, VersusComputer
 }
